@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    background: url(http://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .logo {
+    /* text-align: center; */
+    width: 180px;
+    /* margin: 24px 0 12px 0; */
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bolder;
+  }
+  
+  .topnav a:hover {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+
+  form {
+    margin-top: 5%;
+    border: 10px solid rgba(22, 22, 22, 0.219);
+    height: 70%;
+    width: 70%;
+    border-radius: 0.2cm;
+    background-color: rgba(22, 22, 22, 0.562);
+}
+
+.maincontainer {
+    display:flex; 
+    justify-content:center;
+    height: 50%;
+  }
+
+
+/* split 2 divs */
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    text-align: center;     
+  }
+  .row:after {
+    display: flex;
+    background-color: transparent;
+  }
+
+  label{
+      color: seashell;
+  }
+  .pricelabel{
+      font-weight: bold;
+      font-size: 55px;
+  }
+  .pricesuperscript{
+    font-size: 20px;
+  }
+
+
+
+
+/* slider design */
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+
+  /* select */
+  .custom-select {
+    /* position: relative; */
+    padding: 5px;
+    width: 50%;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .column1{
+    display:flex;
+    float: left;  
+    width: 48.8%;
+    height: 300px; /* Should be removed. Only for demonstration */
+    text-align: center;  
+  }
+  .sec_column{
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5% ; 
+      border-radius: 0.2cm;
+      height: 90%;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(22, 22, 22, 0.562);
+  }
+
+  .greenhr{
+      color:  #4CAF50 ;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+
+
+  /* Payment */
+  .form2 {
+    margin-top: 5%;
+    border: 10px solid rgba(22, 22, 22, 0.219);
+    height: 70%;
+    width: 70%;
+    border-radius: 0.2cm;
+    background-color: rgba(22, 22, 22, 0.562);
+}

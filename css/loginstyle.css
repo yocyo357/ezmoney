@@ -4,7 +4,6 @@ body {
     height: 100%;
     margin: 0;
     background: url(http://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
-    /* background-color: #4CAF50; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,10 +13,6 @@ body {
     display:flex; 
     justify-content:center;
     height: 50%;
-
-    /* flex-direction: row; */
-    /* background-color: #f44336; */
-    /* align-items: center; */
   }
 form {
     margin-top: 10%;

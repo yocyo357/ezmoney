@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "DBconfig.php";
 
 function alert($msg, $url)

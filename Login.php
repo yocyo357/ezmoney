@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "DBconfig.php";
 
 function alert($msg)
@@ -20,6 +21,10 @@ if (isset($_POST['submitbtn'])) {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $_SESSION['username']= $username;
+        $_SESSION['userid'] = $row['ID'];
+        
         header('Location: Home.php');
     } else {
         //call alert function to display the message
@@ -52,7 +57,6 @@ if (isset($_POST['submitbtn'])) {
                     <img src="images/logo.jpg" class="logo">
                     <!-- <label class="loginlabel">EzMoney</label> -->
                 </div>
-
                 <br>
                 <label for="uname"><b>Username</b></label>
                 <input type="text" id="username" name="username" required />
