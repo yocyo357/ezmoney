@@ -54,7 +54,7 @@ if (isset($_POST['submitbtn'])) {
             <div class="container">
 
                 <div class="labelcontainer">
-                    <img src="images/logo.jpg" class="logo">
+                    <img src="images/ezmoneylogo.png" class="logo">
                     <!-- <label class="loginlabel">EzMoney</label> -->
                 </div>
                 <br>

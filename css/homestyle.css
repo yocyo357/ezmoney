@@ -11,7 +11,8 @@ body {
 
   .logo {
     /* text-align: center; */
-    width: 180px;
+    padding-left: 2%;
+    width: 210px;
     /* margin: 24px 0 12px 0; */
   }
   .topnav {
@@ -43,14 +44,25 @@ body {
     float: right;
   }
 
-  form {
-    margin-top: 5%;
+  .loanpage{
+    margin-top: 4%;
     border: 10px solid rgba(22, 22, 22, 0.219);
-    height: 70%;
+    /* height: 70%; */
     width: 70%;
     border-radius: 0.2cm;
     background-color: rgba(22, 22, 22, 0.562);
-}
+  }
+  .paymentpage{
+
+    margin-top: 4%;
+    /* border: 10px solid rgba(22, 22, 22, 0.219); */
+    /* height: 70%; */
+    width: 70%;
+    border-radius: 0.2cm;
+    /* background-color: rgba(22, 22, 22, 0.562); */
+  }
+
+
 
 .maincontainer {
     display:flex; 
@@ -71,10 +83,16 @@ body {
     display: flex;
     background-color: transparent;
   }
-
+h1{
+  color: seashell;
+}
   label{
       color: seashell;
   }
+  .valuelabel{
+   color: #4CAF50;
+ }
+
   .pricelabel{
       font-weight: bold;
       font-size: 55px;
@@ -124,6 +142,18 @@ body {
 
 
   /* select */
+  .payment-label {
+    /* position: relative; */
+    /* background-color: #4CAF50; */
+    /* margin-top: 2%; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    font-family: Arial;
+  }
+
   .custom-select {
     /* position: relative; */
     padding: 5px;
@@ -186,6 +216,26 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
   }
 
+  .column3 {
+    float: left;
+    width: 60%;
+    height: 180px; /* Should be removed. Only for demonstration */
+    /* text-align: center;      */
+    /* background-color: red; */
+  }
+  .row:after {
+    display: flex;
+    background-color: transparent;
+  }
+  .column4{
+    /* display:flex; */
+    float: left;  
+    width: 20%;
+    height: 180px; /* Should be removed. Only for demonstration */
+    /* text-align: center;  */
+    /* background-color: #4CAF50;  */
+  }
+
   .column1{
     display:flex;
     float: left;  
@@ -203,6 +253,18 @@ body {
     text-align: center;
     background-color: rgba(22, 22, 22, 0.562);
   }
+  
+  .payment-container{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2% ; 
+    /* margin-bottom: 2% ;  */
+    border-radius: 0.2cm;
+    height: 90%;
+  width: 80%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.733);
+}
 
   .greenhr{
       color:  #4CAF50 ;
@@ -224,11 +286,12 @@ body {
 
 
   /* Payment */
-  .form2 {
-    margin-top: 5%;
+  .form2 { 
+    margin-top: 2%;
     border: 10px solid rgba(22, 22, 22, 0.219);
-    height: 70%;
+    height: 100%;
     width: 70%;
     border-radius: 0.2cm;
     background-color: rgba(22, 22, 22, 0.562);
-}
+ }
+
